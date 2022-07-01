@@ -27,8 +27,7 @@ jobs:
         with:
           host: "ec2-52-207-70-142.compute-1.amazonaws.com"
           username: "ec2-user"
-          port: 22
-          key: "MIIEowIBAAKCAQEAgq9bnEksLYR+3omnt3rnhvV0LiAKaLYjosQ/VkYThDi5J7WIJ5Yq82odci9kagE5xgMyLFLf6pH8Lcp5JLOd74oKpc/J7nSvFqvXePi5T8zdcIZ+7TtoEe7c+v97Emc00IMm5hPptGB61+Pg2py/KJXOFzDbIwFgDhLkP+giNgr67V1YcY5pt5j4F/PUwtyDJyEThR2WOIYAWr1DtOdnLvKxu+W7S5cxJ5OsYIM0+Cx2cvJQUrIIn3mmw1hVjgAIsctObPiqKRJ4VIpKwMInf3K2mURz1tJRkXbqLqaonnQaW+FSp57o1FJ2AU3HEXIOBmrHtSY37P0Z5hnvyU5MswIDAQABAoIBAB9K+EfTKbX4jRyin7uKvZgOfHRzDasHOj9GeNgizZeSsZt1l5XLGpvQ5B4shQHxKzFkIIaGjcGwlU8ttZZ5QC9Uwbn0qKjl3esy2NTJ0i3uo3PHcOtDl2b76IRd2s2MUxQ+43iiegrMM34wve37LLb+MCxTcZXPRX35PhijcFW6MQRR6hXoLBay29JNvu7yveVRFh0FWdEtkdEKA0hZgz9fxZmq//qgtLTmSkrPESaVkXrAHo/+UMF4PJwu5+MQETSneMUfb+cgp1oe4gL46jsnUtlOk6oL0/IaSi8DLI80H48xtSbj6/21H6KM/z61lMMPuxmqrEy3xdJR0YsEkJkCgYEA0IKwTf8lDn1Waylg7ElEaLWDMf3KZ3DSOHLjV+cZqQjopGGeaTg3UYTkyKv7TwkeIdn/z7xbx70q/uKLPWYU3R09sv4zcyIH6HLc1V5j/CoNLLOrBnter4aWu0fo3+tnspqEQKCiiHGUynEafwlhM9Y7yZt9YQVBCXF87GhZIxUCgYEAoHMDVHpu73t2wozVWNw6VrP+oFs9V56FnXtfX2Aq1NNU/pk4f3K+16o0GS14ONeaOtFU4YRtX4HMtH9fGDjBIJLUSNSLOMe0gMuzOy6K6Zt8DPH9gggunN9VHDOikIcOtZRaA6VRlM4xWz5MeNQYbh7RiGEMh194jWEG/BbpQqcCgYEAi2nGTfA5q618GZyKFJKMbeJnPQauzWju9hVDEqQPUSkGu9oVW87dleDgQ5hSKK80+XdUBmaviyZdWBzK8puNeaYyebpjVii71tzt8K/y9Eh9lJTw1h2o2n2HzOKwvv8bz5xmrvt4kPg4fv8Osz/nQQyN3yfatgMYUCMUXtEKQF0CgYBBDUB9YMJXkDwfNtBNHcT9YC7NPxDI1Hmh1uJdHfVfomskamTQr2oWsGg9CQVkLm3WiQacBH//p/Wh/L5GaMRMe5tcB+iGVdmmGnCJfx5NBoAuE3LP5JdZfObZ70lqxYc+MW6pab6A0XSLZN/GYV+iThZv78EPpbKPx5X4YSWjowKBgAbceA80WT7oMbbBqTH6aFhu7ATj9LZl78WXr74w9tke7b6LZp0E74jei156g8C4RFRHr2Z4JiAKPfk8RYivQP6eujwyX94t+z9E0vhDmhUlk1DlmMByp16dWEu6Kfw3qo2AOYnLY6lr38ZdQMo30pJMqdYG34uWrCVzbFylutmO"
+          key_path : "BaseballAppWebKey.pem"
           source: "build/*"
           target: "/var/apps/baseball-app"  
           overwrite: true
