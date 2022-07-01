@@ -31,5 +31,5 @@ jobs:
           key: ${{ secrets.KEY }}
           source: "build/*"
           target: "/var/apps/baseball-app"  
-          overwrite: --overwrite
+          overwrite: true
       
