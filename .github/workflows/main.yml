@@ -27,7 +27,7 @@ jobs:
         with:
           host: "ec2-3-82-25-94.compute-1.amazonaws.com"
           username: "ec2-user"
-          key_path : "BaseballAppWebKey.pem"
+          key_path : "infrastructure-artifacts/BaseballAppWebKey.pem"
           source: "build/*"
           target: "/var/www/html"  
           overwrite: true
