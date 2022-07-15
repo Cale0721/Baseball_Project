@@ -1,0 +1,2 @@
+-- CREATE OUR DB
+CREATE DATABASE BaseBallApp;
