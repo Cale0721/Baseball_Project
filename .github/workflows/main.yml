@@ -25,10 +25,10 @@ jobs:
       - name: copy file via ssh key
         uses: appleboy/scp-action@master
         with:
-          host: "ec2-52-207-70-142.compute-1.amazonaws.com"
+          host: "ec2-3-82-25-94.compute-1.amazonaws.com"
           username: "ec2-user"
           key_path : "BaseballAppWebKey.pem"
           source: "build/*"
-          target: "/var/apps/baseball-app"  
+          target: "/var/www/html"  
           overwrite: true
       
