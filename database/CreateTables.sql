@@ -27,12 +27,13 @@ CREATE TABLE IF NOT EXISTS Team (
 );
 
 CREATE TABLE IF NOT EXISTS PlayerToTeam (
-PlayerID INT NOT NULL,
-TeamID INT NOT NULL, 
-StartDate VARCHAR(50),
-EndDate VARCHAR(50),
-CONSTRAINT FK_PlayerToTeam_Team FOREIGN KEY (TeamID) REFERENCES Team(TeamID)
-CONSTRAINT FK_PlayerToTeam_Player FOREIGN KEY (PlayerID) REFERENCES Player(PlayerID)
+    PlayerToTeamID SERIAL PRIMARY KEY,
+    PlayerID INT NOT NULL,
+    TeamID INT NOT NULL, 
+    StartDate VARCHAR(50),
+    EndDate VARCHAR(50),
+    CONSTRAINT FK_PlayerToTeam_Team FOREIGN KEY (TeamID) REFERENCES Team(TeamID),
+    CONSTRAINT FK_PlayerToTeam_Player FOREIGN KEY (PlayerID) REFERENCES Player(PlayerID)
 );
 
 CREATE TABLE IF NOT EXISTS Player (
@@ -49,6 +50,7 @@ CREATE TABLE IF NOT EXISTS Player (
 );
 
 CREATE TABLE IF NOT EXISTS PlayerToPosition (
+    PlayerToPositionID SERIAL PRIMARY KEY,
     PlayerID INT NOT NULL, 
     PositionID INT NOT NULL, 
     StareDate VARCHAR(50),
@@ -64,6 +66,7 @@ CREATE TABLE IF NOT EXISTS Position (
 );
 
 CREATE TABLE IF NOT EXISTS PlayerToPositionDesignation (
+    PlayerToPositionDesignationID SERIAL PRIMARY KEY,
     PlayerID INT NOT NULL, 
     PositionDesignationID INT NOT NULL, 
     StartDate VARCHAR(50),

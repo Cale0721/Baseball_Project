@@ -1,0 +1,13 @@
+{
+    "player_id" : "",
+    "first_name" : "",
+    "last_name" : "",
+    "jersey_number" : "",
+    "birthday" : "",
+    "height_inches" : "",
+    "weight": "",
+    "throwing_arm" : "",
+    "batting_arm" : "",
+    "position" : "",
+    "designation" : ""
+}
