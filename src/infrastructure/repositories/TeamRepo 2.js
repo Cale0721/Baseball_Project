@@ -1,3 +1,0 @@
-// GET TEAMS 
-
-// GET TEAM
